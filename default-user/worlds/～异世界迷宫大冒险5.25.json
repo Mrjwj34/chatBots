@@ -400,7 +400,7 @@
             "addMemo": true,
             "order": 351,
             "position": 4,
-            "disable": false,
+            "disable": true,
             "excludeRecursion": true,
             "preventRecursion": true,
             "matchPersonaDescription": false,

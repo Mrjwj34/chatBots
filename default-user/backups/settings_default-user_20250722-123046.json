@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "NavOpened": "false",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}"
     },
@@ -5035,7 +5035,7 @@
                     },
                     {
                         "identifier": "7d6acb75-087b-49b3-a0d2-68cefa6ab269",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "chatHistory",

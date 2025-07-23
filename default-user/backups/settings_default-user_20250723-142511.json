@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "NavOpened": "false",
-        "LNavOpened": "false",
+        "LNavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "AlertWI_异世界，心跳大冒险.png": "true",
@@ -13,7 +13,7 @@
     },
     "currentVersion": "1.13.1",
     "username": "影子",
-    "active_character": "异世界，心跳大冒险.png",
+    "active_character": null,
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -261,13 +261,13 @@
         "allow_name1_display": true,
         "allow_name2_display": true,
         "hotswap_enabled": true,
-        "timer_enabled": true,
+        "timer_enabled": false,
         "timestamps_enabled": true,
         "timestamp_model_icon": true,
         "mesIDDisplay_enabled": false,
         "hideChatAvatars_enabled": false,
         "max_context_unlocked": false,
-        "message_token_count_enabled": true,
+        "message_token_count_enabled": false,
         "expand_message_actions": false,
         "enableZenSliders": false,
         "enableLabMode": false,
@@ -3983,11 +3983,11 @@
                     },
                     {
                         "identifier": "2fc1f156-6c03-41ce-97ff-4fb5dc63bf2f",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "e7b03ce5-4105-4407-a30b-5a8197a20e33",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "db89a6ea-adb6-411f-bead-ae75312d75a7",
@@ -4155,7 +4155,7 @@
                     },
                     {
                         "identifier": "5d8679ff-cc90-4798-bdcf-c6d6fe70646a",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "80488c06-1d0a-4a8a-88c1-cafe84f62d8f",
@@ -4199,7 +4199,7 @@
                     },
                     {
                         "identifier": "ab53ce47-16da-4e2e-ad7e-8069dd44292e",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "63798ad9-f1b8-429f-a732-3b5c3ccc48db",
@@ -4247,7 +4247,7 @@
                     },
                     {
                         "identifier": "51e5fe9a-2c44-4d91-acca-f18f63fe77eb",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "b2ae48c2-f4d6-405e-864e-a74f9243c5a2",
@@ -4263,7 +4263,7 @@
                     },
                     {
                         "identifier": "9880daca-1c3a-4532-8004-ecc779b6c980",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "d219981f-4a6b-4e40-b38d-2e941e8529be",

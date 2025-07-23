@@ -47,7 +47,7 @@
             "addMemo": true,
             "order": 1,
             "position": 4,
-            "disable": false,
+            "disable": true,
             "excludeRecursion": false,
             "preventRecursion": false,
             "delayUntilRecursion": false,
@@ -66,7 +66,13 @@
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
-            "displayIndex": 27
+            "displayIndex": 27,
+            "matchPersonaDescription": false,
+            "matchCharacterDescription": false,
+            "matchCharacterPersonality": false,
+            "matchCharacterDepthPrompt": false,
+            "matchScenario": false,
+            "matchCreatorNotes": false
         },
         "28": {
             "uid": 28,
@@ -81,7 +87,7 @@
             "addMemo": true,
             "order": 5,
             "position": 4,
-            "disable": false,
+            "disable": true,
             "excludeRecursion": false,
             "preventRecursion": true,
             "delayUntilRecursion": false,
@@ -100,7 +106,13 @@
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
-            "displayIndex": 28
+            "displayIndex": 28,
+            "matchPersonaDescription": false,
+            "matchCharacterDescription": false,
+            "matchCharacterPersonality": false,
+            "matchCharacterDepthPrompt": false,
+            "matchScenario": false,
+            "matchCreatorNotes": false
         },
         "29": {
             "uid": 29,
@@ -121,7 +133,7 @@
             "delayUntilRecursion": false,
             "probability": 100,
             "useProbability": true,
-            "depth": 0,
+            "depth": 2,
             "group": "",
             "groupOverride": false,
             "groupWeight": 100,
@@ -134,7 +146,13 @@
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
-            "displayIndex": 29
+            "displayIndex": 29,
+            "matchPersonaDescription": false,
+            "matchCharacterDescription": false,
+            "matchCharacterPersonality": false,
+            "matchCharacterDepthPrompt": false,
+            "matchScenario": false,
+            "matchCreatorNotes": false
         },
         "30": {
             "uid": 30,
@@ -251,7 +269,7 @@
             "addMemo": true,
             "order": 1,
             "position": 4,
-            "disable": false,
+            "disable": true,
             "excludeRecursion": false,
             "preventRecursion": false,
             "delayUntilRecursion": false,

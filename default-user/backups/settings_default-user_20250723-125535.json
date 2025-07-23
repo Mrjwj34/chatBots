@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "NavOpened": "true",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "AlertWI_异世界，心跳大冒险.png": "true",
@@ -5293,7 +5293,7 @@
                     },
                     {
                         "identifier": "75b108cc-13ac-4728-a2f1-107094ebe7a6",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "c6fd3183-02ef-4ffd-8bf3-fb6167ccc866",

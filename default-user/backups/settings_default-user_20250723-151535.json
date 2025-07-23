@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "NavOpened": "false",
-        "LNavOpened": "false",
+        "LNavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "AlertWI_异世界，心跳大冒险.png": "true",
@@ -4227,11 +4227,11 @@
                     },
                     {
                         "identifier": "9c667918-89db-4926-b5a4-1683fde0f7e3",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "b6d0f461-d1b7-4e64-a203-802b5d4194a2",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "0d16acb2-27d7-4de2-9aca-37ccc5f7667f",
@@ -4243,11 +4243,11 @@
                     },
                     {
                         "identifier": "868d1be4-b1cc-4d6d-9841-3d1092669e5d",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "51e5fe9a-2c44-4d91-acca-f18f63fe77eb",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "b2ae48c2-f4d6-405e-864e-a74f9243c5a2",

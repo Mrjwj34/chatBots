@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "NavOpened": "true",
+        "NavOpened": "false",
         "LNavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -13,7 +13,7 @@
     },
     "currentVersion": "1.13.1",
     "username": "影子",
-    "active_character": "异世界，心跳大冒险.png",
+    "active_character": null,
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -5231,7 +5231,7 @@
                     },
                     {
                         "identifier": "1d559cbc-f8d2-4204-a55e-f2f7fac41122",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "3a0db162-fa32-4adf-93bd-47f753011129",
@@ -5327,11 +5327,11 @@
                     },
                     {
                         "identifier": "63b4e2b9-ce5c-4691-b1df-5fabcbff5547",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "0461ce4b-4567-40d3-ab82-32038baa850b",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "97f8783a-eeba-4268-b76e-7b496900530e",

@@ -2465,7 +2465,7 @@
             "marker": false,
             "name": "📜⚙️要求与基调风格-可选",
             "role": "system",
-            "content": "{{setvar::userRequire::玩家游戏要求与喜好:}}\n{{//玩家游戏要求与喜好后填，注解:userRequire是游戏要求 (非常强效，自行修改，性癖爱好之类的)}}\n{{setvar::keyword:: }}\n{{// 可自行调整)}}\n{{//可填美好、日常等等、不讨好玩家、现实、BL、百合之类的，就以前那样}}",
+            "content": "{{setvar::userRequire::玩家游戏要求与喜好:ntr, 滥交女, 婊子, 辣妹}}\n{{//玩家游戏要求与喜好后填，注解:userRequire是游戏要求 (非常强效，自行修改，性癖爱好之类的)}}\n{{setvar::keyword:: }}\n{{// 可自行调整)}}\n{{//可填美好、日常等等、不讨好玩家、现实、BL、百合之类的，就以前那样}}",
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -3051,7 +3051,7 @@
                 },
                 {
                     "identifier": "10697b0b-ff43-4893-90f2-648925be3fe6",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "3145c895-2367-4e47-b669-92eed3a0333a",
@@ -3103,11 +3103,11 @@
                 },
                 {
                     "identifier": "8cc50f7b-10a6-4491-9743-6a6fd152f1a4",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "eb92b407-3b8e-4e9a-9e89-83ca82acf618",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "26f3c45d-2702-4f8a-a344-15fa00ccea21",
@@ -3127,11 +3127,11 @@
                 },
                 {
                     "identifier": "2606039e-3aaf-4e02-a37e-eb8ee7b4d60e",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "5a634485-02cc-4dd5-a2c6-398b1aa4b08a",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "00584659-0caf-4ee8-b551-c4515fc86769",
@@ -3139,11 +3139,11 @@
                 },
                 {
                     "identifier": "6d73c39e-1525-4863-889f-5f33a6be19e4",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "c92a9e83-cb59-4fd4-8e9c-ceb67fe55a88",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "22cc7bf3-b68d-4248-9dcc-69b783b9613e",
@@ -3363,7 +3363,7 @@
                 },
                 {
                     "identifier": "1d559cbc-f8d2-4204-a55e-f2f7fac41122",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "3a0db162-fa32-4adf-93bd-47f753011129",
@@ -3459,11 +3459,11 @@
                 },
                 {
                     "identifier": "63b4e2b9-ce5c-4691-b1df-5fabcbff5547",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "0461ce4b-4567-40d3-ab82-32038baa850b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "97f8783a-eeba-4268-b76e-7b496900530e",

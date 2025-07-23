@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "NavOpened": "true",
+        "NavOpened": "false",
         "LNavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -5325,7 +5325,7 @@
                     },
                     {
                         "identifier": "cb490b29-05a2-40b3-b7a6-f7399dc01120",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "e292498c-c42d-481c-af72-0d00ca74f099",

@@ -20,7 +20,7 @@
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
     "custom_model": "gemini-2.5-pro",
-    "custom_url": "http://45.32.91.44:3000/v1",
+    "custom_url": "http://45.32.91.44:6000/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
@@ -3407,7 +3407,7 @@
                 },
                 {
                     "identifier": "75b108cc-13ac-4728-a2f1-107094ebe7a6",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "c6fd3183-02ef-4ffd-8bf3-fb6167ccc866",
@@ -3439,7 +3439,7 @@
                 },
                 {
                     "identifier": "cb490b29-05a2-40b3-b7a6-f7399dc01120",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "e292498c-c42d-481c-af72-0d00ca74f099",

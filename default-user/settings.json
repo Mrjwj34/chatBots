@@ -257,8 +257,8 @@
         "console_log_prompts": false,
         "request_token_probabilities": false,
         "show_group_chat_queue": false,
-        "allow_name1_display": false,
-        "allow_name2_display": false,
+        "allow_name1_display": true,
+        "allow_name2_display": true,
         "hotswap_enabled": true,
         "timer_enabled": false,
         "timestamps_enabled": true,
@@ -1545,6 +1545,23 @@
                 "maxDepth": null,
                 "markdownOnly": false,
                 "promptOnly": true
+            },
+            {
+                "id": "daaf9f9e-e0b1-45c9-8301-08f29b5d1c87",
+                "scriptName": "消除思维链",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/<thinking>[\\s\\S]*?<\\/thinking>/",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
             }
         ],
         "character_allowed_regex": [

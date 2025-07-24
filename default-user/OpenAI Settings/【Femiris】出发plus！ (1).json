@@ -1504,11 +1504,11 @@
                 },
                 {
                     "identifier": "9cb5ff11-af60-415a-92c6-c6dc61269c88",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "c7112704-8194-4025-b0c2-c5be1f12880d",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "40e149d0-ae42-4548-b696-c08f865afc0e",
@@ -1540,7 +1540,7 @@
                 },
                 {
                     "identifier": "e733f1a4-1b75-4112-ab88-0f8aa94d4c28",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "62d859bb-6f3e-446b-bc50-572f2e4eeeae",

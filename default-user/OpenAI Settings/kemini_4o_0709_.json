@@ -1298,7 +1298,7 @@
             "marker": false,
             "name": "⚠️情绪生动化",
             "role": "system",
-            "content": "- 每一次在正文里的描述角色态度的描述内容内容**之前**，你必须使用 <!-- consider: (情绪模拟插入) --> 格式，简要插入关于角色后续情绪的模拟。\n模拟内容为你认为角色最应该出现的情绪\n正文为此场景下最**平淡**正面富有互动性的情绪特征\n正文中必须使用更平淡正面的情绪{{setvar::emotion::情绪模拟}}",
+            "content": "- 每一次在正文里的描述角色态度的描述内容内容**之前**，你必须使用 <!-- consider: (情绪模拟插入) --> 格式，简要插入关于角色后续情绪的模拟。\n模拟内容为你认为角色最应该出现的情绪\n正文为此场景下最正面富有互动性的情绪特征\n正文中必须使用更正面的情绪{{setvar::emotion::情绪模拟}}",
             "injection_position": 0,
             "injection_depth": 4,
             "forbid_overrides": false,
@@ -1837,11 +1837,11 @@
                 },
                 {
                     "identifier": "94687b39-319e-4104-897a-63494f2843f7",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "741c7d28-79da-468e-9621-91c4c7eadb47",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "23f755cb-dd84-4510-b104-22cc97a16712",
@@ -2085,11 +2085,11 @@
                 },
                 {
                     "identifier": "868d1be4-b1cc-4d6d-9841-3d1092669e5d",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "51e5fe9a-2c44-4d91-acca-f18f63fe77eb",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b2ae48c2-f4d6-405e-864e-a74f9243c5a2",
@@ -2109,7 +2109,7 @@
                 },
                 {
                     "identifier": "d219981f-4a6b-4e40-b38d-2e941e8529be",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "d3379aa1-f69c-40c5-9e8d-19e195ee3c75",

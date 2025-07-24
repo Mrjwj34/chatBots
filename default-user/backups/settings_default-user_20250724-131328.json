@@ -3136,7 +3136,7 @@
                 "marker": false,
                 "name": "➡️思维链开始",
                 "role": "system",
-                "content": "[交互历史及补充设定结束]\n\nDeveloper: 在正式输出前，你必须根据以下步骤用**韩语**逐条思考，并在确认后使用中文输出正文，并使用<thinking></thinking>标签包裹：\n<thinking>",
+                "content": "[交互历史及补充设定结束]\n\nDeveloper: 在正式输出前，你必须根据以下步骤用**韩语**逐条思考，并使用<thinking></thinking>标签包裹：\n<thinking>",
                 "injection_position": 0,
                 "injection_depth": 4,
                 "forbid_overrides": false,

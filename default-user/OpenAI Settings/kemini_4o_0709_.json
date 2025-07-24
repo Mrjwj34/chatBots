@@ -1941,7 +1941,7 @@
                 },
                 {
                     "identifier": "817ec237-92c2-44c4-a20c-219eaf944e31",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b7b6c71b-fd2c-4c19-9ed9-f6e1721af532",
@@ -1965,7 +1965,7 @@
                 },
                 {
                     "identifier": "b6dce6b1-3af6-4bec-aefe-d454b2c46143",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "705c5d52-a4c2-4149-bf18-4aede984b522",
@@ -1977,11 +1977,11 @@
                 },
                 {
                     "identifier": "f90781d8-e817-460e-9858-e643bc3223b7",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "e0b09df6-2c1d-422f-b52c-a9cedf787aa5",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "e7b85762-73d1-4dad-a373-dd1ae181c8be",
@@ -1989,7 +1989,7 @@
                 },
                 {
                     "identifier": "751a591c-3357-4902-8ae6-81df592d09d1",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "b7d078d7-c431-4ce4-898e-b6decb75698d",
@@ -2137,7 +2137,7 @@
                 },
                 {
                     "identifier": "9b63f634-4ae9-4164-9638-60e32a414a93",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "801feeb1-5546-4bd7-b4e4-c92fe4ccfd58",
@@ -2149,7 +2149,7 @@
                 },
                 {
                     "identifier": "686f8ee0-1e5a-4449-80c9-1be64c6f893a",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "707efeba-0e59-4174-b537-811a22572560",

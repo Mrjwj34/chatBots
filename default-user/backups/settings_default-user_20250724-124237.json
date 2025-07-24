@@ -23,7 +23,10 @@
     "main_api": "openai",
     "world_info_settings": {
         "world_info": {
-            "globalSelect": []
+            "globalSelect": [
+                "！自用世界书",
+                "性爱世界书（中文）"
+            ]
         },
         "world_info_depth": 2,
         "world_info_min_activations": 0,
@@ -3984,7 +3987,7 @@
                     },
                     {
                         "identifier": "e7b03ce5-4105-4407-a30b-5a8197a20e33",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "db89a6ea-adb6-411f-bead-ae75312d75a7",
@@ -4000,7 +4003,7 @@
                     },
                     {
                         "identifier": "23f755cb-dd84-4510-b104-22cc97a16712",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "d5b2e433-395b-49c0-9fe3-1e94ecc5bd45",
@@ -4088,7 +4091,7 @@
                     },
                     {
                         "identifier": "4e8814a2-0363-4b98-8a59-f933f005d06d",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "afb7f55c-007e-4f6a-9a9b-2df790155d1b",
@@ -4104,11 +4107,11 @@
                     },
                     {
                         "identifier": "5dbf6b15-a309-41d9-99e2-588c7a47d28e",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "ee0dd185-be45-4977-9ee3-fa64ee7cf580",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "619f1196-7847-4b1b-84b1-b2b1e436cddd",
@@ -4120,7 +4123,7 @@
                     },
                     {
                         "identifier": "b6dce6b1-3af6-4bec-aefe-d454b2c46143",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "705c5d52-a4c2-4149-bf18-4aede984b522",
@@ -4136,7 +4139,7 @@
                     },
                     {
                         "identifier": "e0b09df6-2c1d-422f-b52c-a9cedf787aa5",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "e7b85762-73d1-4dad-a373-dd1ae181c8be",
@@ -4144,7 +4147,7 @@
                     },
                     {
                         "identifier": "751a591c-3357-4902-8ae6-81df592d09d1",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "b7d078d7-c431-4ce4-898e-b6decb75698d",
@@ -4188,7 +4191,7 @@
                     },
                     {
                         "identifier": "7bcd26a2-5a78-4aea-a573-324392f72fff",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "496ae724-3342-4e88-a340-7ca0a53d24ac",
@@ -4212,7 +4215,7 @@
                     },
                     {
                         "identifier": "c351c85e-7c17-4092-8fdf-475cb0d9ba94",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "7a93c8c9-d86b-4828-bcdd-1ab55e7bbae7",
@@ -4228,7 +4231,7 @@
                     },
                     {
                         "identifier": "b6d0f461-d1b7-4e64-a203-802b5d4194a2",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "0d16acb2-27d7-4de2-9aca-37ccc5f7667f",

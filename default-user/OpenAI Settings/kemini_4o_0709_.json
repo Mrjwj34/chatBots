@@ -53,7 +53,7 @@
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
     "personality_format": "[{{char}}'s personality: {{personality}}]",
     "group_nudge_prompt": "",
-    "stream_openai": false,
+    "stream_openai": true,
     "prompts": [
         {
             "name": "头部提示词",
@@ -2185,7 +2185,7 @@
                 },
                 {
                     "identifier": "df524211-87ff-4056-aeec-d9288d67e153",
-                    "enabled": false
+                    "enabled": true
                 }
             ]
         }

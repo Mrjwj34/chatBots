@@ -1549,7 +1549,7 @@
             {
                 "id": "daaf9f9e-e0b1-45c9-8301-08f29b5d1c87",
                 "scriptName": "消除思维链",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<thinking>[\\s\\S]*?<\\/thinking>/",
                 "replaceString": "",
@@ -1770,7 +1770,7 @@
             {
                 "id": "ebaf13d5-2e6b-441f-b42b-52ee17986356",
                 "scriptName": "小总结2",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/([\\s\\S]*?<details>\\s*<summary>\\s*摘要\\s*<\\/summary>|<\\/details>[\\s\\S]*?$)/gs",
                 "replaceString": "",
@@ -1787,7 +1787,7 @@
             {
                 "id": "c619cd00-f255-4ea5-9e23-8a034564dbe6",
                 "scriptName": "小总结1",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<details>\\s*<summary>\\s*摘要\\s*<\\/summary>[\\s\\S]*?<\\/details>/gsi",
                 "replaceString": "",
@@ -1804,7 +1804,7 @@
             {
                 "id": "eee276c5-2806-41bd-be61-1f8759cd81b1",
                 "scriptName": "K4o添加tag修复",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
                 "replaceString": "<interactive_input>\n$1\n</interactive_input>",
@@ -3136,7 +3136,7 @@
                 "marker": false,
                 "name": "➡️思维链开始",
                 "role": "system",
-                "content": "[交互历史及补充设定结束]\n\nDeveloper: 在正式输出前，你必须根据以下步骤用**韩国语**逐条思考，并在确认后使用中文输出正文，并使用<thinking></thinking>标签包裹：\n<thinking>",
+                "content": "[交互历史及补充设定结束]\n\nDeveloper: 在正式输出前，你必须根据以下步骤用**韩语**逐条思考，并在确认后使用中文输出正文，并使用<thinking></thinking>标签包裹：\n<thinking>",
                 "injection_position": 0,
                 "injection_depth": 4,
                 "forbid_overrides": false,

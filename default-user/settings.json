@@ -2279,7 +2279,7 @@
                 "name": "⭕⚙️📋字数调整-可改",
                 "system_prompt": true,
                 "role": "system",
-                "content": "{{setvar::min::1000token}}\n{{//注解:正文最小字数}}\n{{setvar::max::1500token}}\n{{//注解:正文最大字数}}\n{{setvar::smallcotl::300}}\n{{//注解:专家思考使用token长度}}\n{{setvar::min2::300token}}\n{{//注解:截断小故事最小字数}}\n{{setvar::max2::500token}}\n{{//注解:截断小故事最大字数}}",
+                "content": "{{setvar::min::1500token}}\n{{//注解:正文最小字数}}\n{{setvar::max::2000token}}\n{{//注解:正文最大字数}}\n{{setvar::smallcotl::300}}\n{{//注解:专家思考使用token长度}}\n{{setvar::min2::300token}}\n{{//注解:截断小故事最小字数}}\n{{setvar::max2::500token}}\n{{//注解:截断小故事最大字数}}",
                 "identifier": "jailbreak",
                 "injection_position": 0,
                 "injection_depth": 4,
@@ -5659,7 +5659,7 @@
                     },
                     {
                         "identifier": "97f8783a-eeba-4268-b76e-7b496900530e",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "58075478-2ea0-4e92-adf2-c21cc5f07e21",

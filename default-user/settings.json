@@ -5243,7 +5243,7 @@
                     },
                     {
                         "identifier": "10697b0b-ff43-4893-90f2-648925be3fe6",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "3145c895-2367-4e47-b669-92eed3a0333a",
@@ -5817,7 +5817,7 @@
         "continue_postfix": " ",
         "custom_prompt_post_processing": "semi",
         "show_thoughts": false,
-        "reasoning_effort": "low",
+        "reasoning_effort": "high",
         "enable_web_search": false,
         "request_images": false,
         "seed": -1,

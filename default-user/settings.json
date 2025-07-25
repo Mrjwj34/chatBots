@@ -495,7 +495,7 @@
             {
                 "id": "3d90303b-34ab-4ac8-affe-d2e2dbad6d66",
                 "scriptName": "【1】删除前置楼层(可选)",
-                "disabled": false,
+                "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "(?:^[\\s\\S]*?(<summary>[\\s\\S]*?<\\/summary>)[\\s\\S]*?$)|(?:^([\\s\\S]+)$)",
                 "replaceString": "$1",
@@ -1822,7 +1822,7 @@
             {
                 "id": "571c27cf-d20e-4b04-934c-564b7b125866",
                 "scriptName": "Kemini七月通用去除多余内容",
-                "disabled": true,
+                "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/(<disclaimer>.*?</disclaimer>)|(<guifan>.*?</guifan>)|```start|<content>|</content>|```end|<done>|`<done>`|(<!--[\\s\\S]*?-->(\\s*))|(.*?</think(ing)?>(\\n)?)|(<think(ing)?>[\\s\\S]*<\\/think(ing)?>(\\n)?)/gs",
                 "replaceString": "",
@@ -5651,11 +5651,11 @@
                     },
                     {
                         "identifier": "63b4e2b9-ce5c-4691-b1df-5fabcbff5547",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "0461ce4b-4567-40d3-ab82-32038baa850b",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "97f8783a-eeba-4268-b76e-7b496900530e",

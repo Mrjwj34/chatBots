@@ -20,11 +20,11 @@
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
     "custom_model": "gemini-2.5-pro",
-    "custom_url": "http://45.32.91.44:6000/v1",
+    "custom_url": "http://45.32.91.44:3000/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
-    "custom_prompt_post_processing": "strict",
+    "custom_prompt_post_processing": "semi",
     "google_model": "toothless-ab-test",
     "vertexai_model": "gemini-2.0-flash-001",
     "temperature": 1.2,
@@ -3167,7 +3167,7 @@
                 },
                 {
                     "identifier": "e5d85924-82e1-4f26-bf1c-8f7dce07a687",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "ea5dd4d4-70c9-441b-be48-c0948d4a6782",
@@ -3187,7 +3187,7 @@
                 },
                 {
                     "identifier": "b3ead074-20a8-42a2-bbe9-ada7cec9a8c3",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "1c209371-7841-4553-a1aa-5e986ec41cb3",

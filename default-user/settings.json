@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "NavOpened": "true",
+        "NavOpened": "false",
         "LNavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -13,7 +13,7 @@
     },
     "currentVersion": "1.13.1",
     "username": "影子",
-    "active_character": null,
+    "active_character": "异世界，心跳大冒险.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -1295,19 +1295,19 @@
             {
                 "id": "daaf9f9e-e0b1-45c9-8301-08f29b5d1c87",
                 "scriptName": "消除思维链",
-                "disabled": true,
-                "runOnEdit": true,
-                "findRegex": "/<thinking>[\\s\\S]*?<\\/thinking>/",
+                "findRegex": "/<guide>[\\s\\S]*?<\\/guide>/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
+                "disabled": false,
+                "markdownOnly": true,
+                "promptOnly": false,
+                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null,
-                "markdownOnly": true,
-                "promptOnly": false
+                "maxDepth": null
             },
             {
                 "id": "5203aa3f-372a-410c-bbeb-215612b2b999",
@@ -1617,7 +1617,7 @@
             },
             {
                 "id": "73fa84f2-051a-4fcd-a8a0-8ae5658b3dba",
-                "scriptName": "【Dreammini】1.5(搶話)去除所有用户消息",
+                "scriptName": "dreamini-【Dreammini】1.5(搶話)去除所有用户消息",
                 "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
@@ -1634,7 +1634,7 @@
             },
             {
                 "id": "6d9fbba5-cad1-433b-b029-2bede24458d3",
-                "scriptName": "【Dreammini】1.添加输入tag",
+                "scriptName": "dreamini-【Dreammini】1.添加输入tag",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "^([\\s\\S]*)$",
@@ -1651,7 +1651,7 @@
             },
             {
                 "id": "a6cdf897-f72e-4f89-bfd7-6ca26d761109",
-                "scriptName": "【Dreammini】2.去多餘",
+                "scriptName": "dreamini-【Dreammini】2.去多餘",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/([\\\\s\\S]*?</guide>)|(<true>[\\s\\S]*?</true>)|<guide>|</guide>|(<!--\\s*run([\\s\\S]*?)-->)|(<prethink>[\\s\\S]*?</prethink>)|(<!--\\s*guide\\s*:\\s*(.*?)\\s*-->)/gsi",
@@ -1668,7 +1668,7 @@
             },
             {
                 "id": "18567ca7-b0c6-463a-b02b-183566b4ffd2",
-                "scriptName": "【Dreammini】3.[推进(缩起)]",
+                "scriptName": "dreamini-【Dreammini】3.[推进(缩起)]",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
@@ -1685,7 +1685,7 @@
             },
             {
                 "id": "5bb6e147-14f0-4527-9b45-6ea958df26d3",
-                "scriptName": "【Dreammini】3.[推进(移除)]",
+                "scriptName": "dreamini-【Dreammini】3.[推进(移除)]",
                 "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
@@ -1702,7 +1702,7 @@
             },
             {
                 "id": "21ed7ae3-8926-483e-ac46-3bd55a1d6530",
-                "scriptName": "【Dreammini】4.[推进(移除舊)]",
+                "scriptName": "dreamini-【Dreammini】4.[推进(移除舊)]",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
@@ -1719,7 +1719,7 @@
             },
             {
                 "id": "77052179-920e-4b83-87f5-3dc4cef4a0c6",
-                "scriptName": "【Dreammini】5.小总结(縮起)",
+                "scriptName": "dreamini-【Dreammini】5.小总结(縮起)",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
@@ -1736,7 +1736,7 @@
             },
             {
                 "id": "9a7762c0-3e63-4502-bae5-10cf073fd5b6",
-                "scriptName": "【Dreammini】5.小总结(移除)",
+                "scriptName": "dreamini-【Dreammini】5.小总结(移除)",
                 "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
@@ -1753,7 +1753,7 @@
             },
             {
                 "id": "18956466-025a-4e61-b88d-74e5d4088051",
-                "scriptName": "【Dreammini】6.小总结(移除正文)",
+                "scriptName": "dreamini-【Dreammini】6.小总结(移除正文)",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*)<\\/summary>[\\s\\S]*/gsi",
@@ -1770,7 +1770,7 @@
             },
             {
                 "id": "dd994ad4-8957-4a56-9cc9-e4afa85acb2e",
-                "scriptName": "【Dreammini】7.移除最近小总结",
+                "scriptName": "dreamini-【Dreammini】7.移除最近小总结",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
@@ -1787,7 +1787,7 @@
             },
             {
                 "id": "b31d0aec-eabd-4680-be70-a373a308cf65",
-                "scriptName": "【Dreammini】8.点击选项(格式)",
+                "scriptName": "dreamini-【Dreammini】8.点击选项(格式)",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/<选项>\\s*1\\.\\s*(.*)\\s*2\\.\\s*(.*)\\s*3\\.\\s*(.*)\\s*4\\.\\s*(.*)\\s*5\\.\\s*(.*)\\s*6\\.\\s*(.*)\\s*<\\/选项>/",
@@ -1804,7 +1804,7 @@
             },
             {
                 "id": "4c4f6a63-0ee7-404a-b31e-1e61232f0c7b",
-                "scriptName": "【Dreammini】8.选项(格式)",
+                "scriptName": "dreamini-【Dreammini】8.选项(格式)",
                 "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<options>\\s*(1\\.[^\\n]*)\\s*(2\\.[^\\n]*)\\s*(3\\.[^\\n]*)\\s*(4\\.[^\\n]*)\\s*(5\\.[^\\n]*)\\s*(6\\.[^\\n]*)\\s*(7\\.[^\\n]*)\\s*(8\\.[^\\n]*)\\s*(9\\.[^\\n]*)\\s*<\\/options>/gsi",
@@ -1821,7 +1821,7 @@
             },
             {
                 "id": "eb3db98a-6a27-4f32-8e80-4a3014d9913a",
-                "scriptName": "【Dreammini】9.点击选项(消除)",
+                "scriptName": "dreamini-【Dreammini】9.点击选项(消除)",
                 "disabled": false,
                 "runOnEdit": true,
                 "findRegex": "/<选项>\\s*1\\.\\s*(.*)\\s*2\\.\\s*(.*)\\s*3\\.\\s*(.*)\\s*4\\.\\s*(.*)\\s*5\\.\\s*(.*)\\s*6\\.\\s*(.*)\\s*<\\/选项>/",
@@ -1838,7 +1838,7 @@
             },
             {
                 "id": "c28179a9-f094-4df5-a8a9-29c6f46fdd8a",
-                "scriptName": "【Dreammini】9.选项(移除)",
+                "scriptName": "dreamini-【Dreammini】9.选项(移除)",
                 "disabled": true,
                 "runOnEdit": true,
                 "findRegex": "/<options[^>]*>[\\s\\S]*?</options>/gsi",

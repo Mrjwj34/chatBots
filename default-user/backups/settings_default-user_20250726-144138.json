@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "NavOpened": "false",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "AlertWI_异世界，心跳大冒险.png": "true",
@@ -5223,7 +5223,7 @@
                 "marker": false,
                 "name": "📂外部状态栏适配",
                 "role": "system",
-                "content": "{{setvar::<StatusBlock>::状态栏、stablock)}}",
+                "content": "{{setvar::<StatusBlock>::状态栏、}}",
                 "injection_position": 0,
                 "injection_depth": 4,
                 "injection_order": 100,

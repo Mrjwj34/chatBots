@@ -1299,19 +1299,19 @@
             {
                 "id": "daaf9f9e-e0b1-45c9-8301-08f29b5d1c87",
                 "scriptName": "消除思维链",
+                "disabled": false,
+                "runOnEdit": true,
                 "findRegex": "/<guide>[\\s\\S]*?<\\/guide>/",
                 "replaceString": "",
                 "trimStrings": [],
                 "placement": [
                     2
                 ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": false,
-                "runOnEdit": true,
                 "substituteRegex": 0,
                 "minDepth": null,
-                "maxDepth": null
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": false
             },
             {
                 "id": "5203aa3f-372a-410c-bbeb-215612b2b999",
@@ -3936,7 +3936,7 @@
                 "marker": false,
                 "name": "🌏⚙️世界场景-可选",
                 "role": "system",
-                "content": "{{setvar::place::游戏地点:中式玄幻}}\n{{//地点背景设定，要恐怖，魔幻，异世界，废土，战场，地下城，古代，未来，日本，中国，特定同人小说，仙侠，武林都能改}}\n{{//影响角色带你去的地方和故事背景，可避免魔幻背景产生现代地点导致出戏}}",
+                "content": "{{setvar::place::游戏地点:异世界}}\n{{//地点背景设定，要恐怖，魔幻，异世界，废土，战场，地下城，古代，未来，日本，中国，特定同人小说，仙侠，武林都能改}}\n{{//影响角色带你去的地方和故事背景，可避免魔幻背景产生现代地点导致出戏}}",
                 "injection_position": 0,
                 "injection_depth": 4,
                 "forbid_overrides": false,
@@ -5393,7 +5393,7 @@
                     },
                     {
                         "identifier": "eb92b407-3b8e-4e9a-9e89-83ca82acf618",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "26f3c45d-2702-4f8a-a344-15fa00ccea21",

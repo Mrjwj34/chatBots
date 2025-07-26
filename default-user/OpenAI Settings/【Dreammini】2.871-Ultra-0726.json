@@ -1711,7 +1711,7 @@
             "marker": false,
             "name": "🌏⚙️世界场景-可选",
             "role": "system",
-            "content": "{{setvar::place::游戏地点:异世界}}\n{{//地点背景设定，要恐怖，魔幻，异世界，废土，战场，地下城，古代，未来，日本，中国，特定同人小说，仙侠，武林都能改}}\n{{//影响角色带你去的地方和故事背景，可避免魔幻背景产生现代地点导致出戏}}",
+            "content": "{{setvar::place::游戏地点:中式玄幻}}\n{{//地点背景设定，要恐怖，魔幻，异世界，废土，战场，地下城，古代，未来，日本，中国，特定同人小说，仙侠，武林都能改}}\n{{//影响角色带你去的地方和故事背景，可避免魔幻背景产生现代地点导致出戏}}",
             "injection_position": 0,
             "injection_depth": 4,
             "forbid_overrides": false,
@@ -3168,7 +3168,7 @@
                 },
                 {
                     "identifier": "eb92b407-3b8e-4e9a-9e89-83ca82acf618",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "26f3c45d-2702-4f8a-a344-15fa00ccea21",

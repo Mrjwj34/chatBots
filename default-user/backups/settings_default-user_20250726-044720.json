@@ -13,7 +13,7 @@
     },
     "currentVersion": "1.13.1",
     "username": "影子",
-    "active_character": null,
+    "active_character": "异世界，心跳大冒险.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -493,6 +493,262 @@
         },
         "dice": {},
         "regex": [
+            {
+                "id": "3d90303b-34ab-4ac8-affe-d2e2dbad6d66",
+                "scriptName": "【1】删除前置楼层(可选)",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "(?:^[\\s\\S]*?(<summary>[\\s\\S]*?<\\/summary>)[\\s\\S]*?$)|(?:^([\\s\\S]+)$)",
+                "replaceString": "$1",
+                "trimStrings": [],
+                "placement": [
+                    1,
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": 25,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": false
+            },
+            {
+                "id": "73fa84f2-051a-4fcd-a8a0-8ae5658b3dba",
+                "scriptName": "【Dreammini】1.5(搶話)去除所有用户消息",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "^([\\s\\S]*)$",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    1
+                ],
+                "substituteRegex": 0,
+                "minDepth": 1,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
+            {
+                "id": "6d9fbba5-cad1-433b-b029-2bede24458d3",
+                "scriptName": "【Dreammini】1.添加输入tag",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "^([\\s\\S]*)$",
+                "replaceString": "<user_input>\n$1\n</user_input>",
+                "trimStrings": [],
+                "placement": [
+                    1
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 1,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
+            {
+                "id": "a6cdf897-f72e-4f89-bfd7-6ca26d761109",
+                "scriptName": "【Dreammini】2.去多餘",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/([\\s\\S]*?</think>)|(<true>[\\s\\S]*?</true>)|<think>|</think>|(<!--\\s*run([\\s\\S]*?)-->)|(<prethink>[\\s\\S]*?</prethink>)/gsi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
+            },
+            {
+                "id": "18567ca7-b0c6-463a-b02b-183566b4ffd2",
+                "scriptName": "【Dreammini】3.[推进(缩起)]",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
+                "replaceString": "<details>\n<summary>推进</summary>\n$1\n</details>\n \n",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 30,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "5bb6e147-14f0-4527-9b45-6ea958df26d3",
+                "scriptName": "【Dreammini】3.[推进(移除)]",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 30,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "21ed7ae3-8926-483e-ac46-3bd55a1d6530",
+                "scriptName": "【Dreammini】4.[推进(移除舊)]",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": 4,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
+            },
+            {
+                "id": "77052179-920e-4b83-87f5-3dc4cef4a0c6",
+                "scriptName": "【Dreammini】5.小总结(縮起)",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
+                "replaceString": "<details>\n<summary>摘要</summary>\n$1\n</details>\n ",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 20,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "9a7762c0-3e63-4502-bae5-10cf073fd5b6",
+                "scriptName": "【Dreammini】5.小总结(移除)",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 20,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "18956466-025a-4e61-b88d-74e5d4088051",
+                "scriptName": "【Dreammini】6.小总结(移除正文)",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*)<\\/summary>[\\s\\S]*/gsi",
+                "replaceString": "<summary>\n$1\n</summary>",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": 20,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
+            {
+                "id": "dd994ad4-8957-4a56-9cc9-e4afa85acb2e",
+                "scriptName": "【Dreammini】7.移除最近小总结",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 19,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
+            {
+                "id": "b31d0aec-eabd-4680-be70-a373a308cf65",
+                "scriptName": "【Dreammini】8.点击选项(格式)",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/<①>(.*?)<\\/①>.*?<②>(.*?)<\\/②>.*?<③>(.*?)<\\/③>.*?<④>(.*?)<\\/④>.*?<⑤>(.*?)<\\/⑤>.*?<⑥>(.*?)<\\/⑥>/s",
+                "replaceString": "```html\n<!DOCTYPE html>\n<html>\n<head>\n<style>\n/* 增加了淡出动画和隐藏样式 */\n@keyframes fade-out-nova { from { opacity: 1; transform: scale(1); } to { opacity: 0; transform: scale(0.95); } }\n.nova-container.fading-out { animation: fade-out-nova 0.3s ease-out forwards; }\n\n:root {\n  --sky-blue-bg: linear-gradient(135deg, rgba(240, 248, 255, 0.97), rgba(220, 235, 255, 0.97));\n  --sky-blue-border: rgba(135, 206, 250, 0.7);\n  --sky-blue-shadow: rgba(135, 206, 250, 0.25);\n  --sky-blue-text: #4682B4;\n  --sky-blue-hover: rgba(135, 206, 250, 0.2);\n}\n@keyframes snowfall {\n  0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }\n  50% { opacity: 1; }\n  100% { transform: translateY(300px) rotate(360deg); opacity: 0; }\n}\n@keyframes glowing-border-blue { 0%, 100% { border-color: rgba(135, 206, 250, 0.6); } 50% { border-color: rgba(173, 216, 230, 1); } }\n\n.theme-winter-love {\n  display: flex; /* 使用flex布局以确保响应性 */\n  justify-content: center;\n  width: 100%;\n  padding: 0 5px;\n  box-sizing: border-box;\n  font-family: 'Quicksand', sans-serif;\n  margin: 10px auto;\n}\n.card-winter-love {\n  flex-grow: 1;\n  max-width: 720px;\n  background: var(--sky-blue-bg);\n  border-radius: 16px;\n  padding: 8px;\n  box-shadow: 0 0 25px var(--sky-blue-shadow);\n  border: 2px solid var(--sky-blue-border);\n  backdrop-filter: blur(10px);\n  -webkit-backdrop-filter: blur(10px);\n  animation: glowing-border-blue 4s infinite ease-in-out;\n  position: relative;\n  overflow: hidden;\n}\n.snowflakes {\n  position: absolute;\n  top: 0; left: 0;\n  width: 100%; height: 100%;\n  pointer-events: none;\n}\n.snowflake {\n  position: absolute; color: var(--sky-blue-border); font-size: 20px;\n  opacity: 0; animation: snowfall 10s linear infinite;\n}\n.snowflake:nth-child(1) { left: 10%; animation-duration: 12s; animation-delay: 0s; }\n.snowflake:nth-child(2) { left: 20%; animation-duration: 8s; animation-delay: 3s; font-size: 15px; }\n.snowflake:nth-child(3) { left: 30%; animation-duration: 15s; animation-delay: 1s; }\n.snowflake:nth-child(4) { left: 50%; animation-duration: 9s; animation-delay: 5s; font-size: 12px; }\n.snowflake:nth-child(5) { left: 70%; animation-duration: 11s; animation-delay: 2s; }\n.snowflake:nth-child(6) { left: 85%; animation-duration: 13s; animation-delay: 7s; font-size: 18px; }\n\n.button-group-winter {\n    display: flex;\n    flex-direction: column;\n    gap: 5px;\n}\n.action-btn-winter {\n  border-radius: 9px; padding: 7px 14px; font-size: 17px;\n  font-weight: 500; cursor: pointer; text-align: left;\n  width: 100%; position: relative; overflow: hidden;\n  transition: all 0.2s ease; border: none;\n  background-color: rgba(135, 206, 250, 0.1);\n  color: var(--sky-blue-text);\n}\n.action-btn-winter:hover {\n  background-color: var(--sky-blue-hover);\n  transform: scale(1.015);\n}\n</style>\n</head>\n<body>\n<div class=\"theme-winter-love nova-container\"> <!-- 增加了nova-container类用于脚本选择 -->\n  <div class=\"card-winter-love\">\n    <div class=\"snowflakes\" aria-hidden=\"true\">\n      <div class=\"snowflake\">❄</div> <div class=\"snowflake\">❅</div> <div class=\"snowflake\">❄</div>\n      <div class=\"snowflake\">❅</div> <div class=\"snowflake\">❄</div> <div class=\"snowflake\">❅</div>\n    </div>\n    <div class=\"button-group-winter\">\n      <button class=\"action-btn-winter\" data-action=\"$1\">$1</button>\n      <button class=\"action-btn-winter\" data-action=\"$2\">$2</button>\n      <button class=\"action-btn-winter\" data-action=\"$3\">$3</button>\n      <button class=\"action-btn-winter\" data-action=\"$4\">$4</button>\n      <button class=\"action-btn-winter\" data-action=\"$5\">$5</button>\n      <button class=\"action-btn-winter\" data-action=\"$6\">$6</button>\n    </div>\n  </div>\n</div>\n<script>\ndocument.querySelectorAll('.action-btn-winter').forEach(btn => {\n  btn.addEventListener('click', (event) => {\n    const message = btn.getAttribute('data-action');\n    if (typeof triggerSlash === 'function') {\n      triggerSlash(`/send ${message}|/trigger`);\n    } else {\n        console.log('triggerSlash未定义');\n    }\n    // 关键改动：让整个选择框消失\n    const container = btn.closest('.nova-container');\n    if (container) {\n      container.classList.add('fading-out');\n      setTimeout(() => {\n        container.style.display = 'none';\n      }, 300); // 动画时长为300ms\n    }\n  });\n});\n</script>\n</body>\n</html>\n```",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 2,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "4c4f6a63-0ee7-404a-b31e-1e61232f0c7b",
+                "scriptName": "【Dreammini】8.选项(格式)",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/<options>\\s*(1\\.[^\\n]*)\\s*(2\\.[^\\n]*)\\s*(3\\.[^\\n]*)\\s*(4\\.[^\\n]*)\\s*(5\\.[^\\n]*)\\s*(6\\.[^\\n]*)\\s*(7\\.[^\\n]*)\\s*(8\\.[^\\n]*)\\s*(9\\.[^\\n]*)\\s*<\\/options>/gsi",
+                "replaceString": "\n<options><details><summary style=\"background-color: #000000; color: #ffffff; padding: 5px; font-weight: bold; border-radius: 5px;\">故事选项</summary><div style=\"background-color: #000000; color: #ffffff; padding: 15px; border-radius: 0 0 5px 5px;\"><p style=\"margin: 5px 0;\">以下为当前场景下的可选行动，选择数字1-9（可複选），或使用10自行输入：</p><ul style=\"list-style-type: none; padding-left: 0;\"><li>\"$1\" <br> </li><li>\"$2\"<br> </li><li>\"$3\"<br></li><li>\"$4\"<br></li><li>\"$5\"<br></li><li>\"$6\"<br> </li><li>\"$7\"<br></li><li>\"$8\"<br></li><li>\"$9\" </li></ul></div></details></options>\n",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 20,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
+                "id": "eb3db98a-6a27-4f32-8e80-4a3014d9913a",
+                "scriptName": "【Dreammini】9.点击选项(消除)",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/<①>(.*?)<\\/①>.*?<②>(.*?)<\\/②>.*?<③>(.*?)<\\/③>.*?<④>(.*?)<\\/④>.*?<⑤>(.*?)<\\/⑤>.*?<⑥>(.*?)<\\/⑥>/s",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null,
+                "markdownOnly": true,
+                "promptOnly": true
+            },
+            {
+                "id": "c28179a9-f094-4df5-a8a9-29c6f46fdd8a",
+                "scriptName": "【Dreammini】9.选项(移除)",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "/<options[^>]*>[\\s\\S]*?</options>/gsi",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": 3,
+                "maxDepth": null,
+                "markdownOnly": false,
+                "promptOnly": true
+            },
             {
                 "id": "db77fde6-a36c-4284-b1a1-96cb7f990f99",
                 "scriptName": "替换-不易察觉",
@@ -1613,244 +1869,6 @@
                 "minDepth": null,
                 "maxDepth": null,
                 "markdownOnly": true,
-                "promptOnly": true
-            },
-            {
-                "id": "73fa84f2-051a-4fcd-a8a0-8ae5658b3dba",
-                "scriptName": "【Dreammini】1.5(搶話)去除所有用户消息",
-                "disabled": true,
-                "runOnEdit": true,
-                "findRegex": "^([\\s\\S]*)$",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1
-                ],
-                "substituteRegex": 0,
-                "minDepth": 1,
-                "maxDepth": null,
-                "markdownOnly": false,
-                "promptOnly": true
-            },
-            {
-                "id": "6d9fbba5-cad1-433b-b029-2bede24458d3",
-                "scriptName": "【Dreammini】1.添加输入tag",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "^([\\s\\S]*)$",
-                "replaceString": "<user_input>\n$1\n</user_input>",
-                "trimStrings": [],
-                "placement": [
-                    1
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 1,
-                "markdownOnly": false,
-                "promptOnly": true
-            },
-            {
-                "id": "a6cdf897-f72e-4f89-bfd7-6ca26d761109",
-                "scriptName": "【Dreammini】2.去多餘",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/([\\\\s\\S]*?</guide>)|(<true>[\\s\\S]*?</true>)|<guide>|</guide>|(<!--\\s*run([\\s\\S]*?)-->)|(<prethink>[\\s\\S]*?</prethink>)|(<!--\\s*guide\\s*:\\s*(.*?)\\s*-->)/gsi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null,
-                "markdownOnly": true,
-                "promptOnly": true
-            },
-            {
-                "id": "18567ca7-b0c6-463a-b02b-183566b4ffd2",
-                "scriptName": "【Dreammini】3.[推进(缩起)]",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
-                "replaceString": "<details>\n<summary>推进</summary>\n$1\n</details>\n \n",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 30,
-                "markdownOnly": true,
-                "promptOnly": false
-            },
-            {
-                "id": "5bb6e147-14f0-4527-9b45-6ea958df26d3",
-                "scriptName": "【Dreammini】3.[推进(移除)]",
-                "disabled": true,
-                "runOnEdit": true,
-                "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 30,
-                "markdownOnly": true,
-                "promptOnly": false
-            },
-            {
-                "id": "21ed7ae3-8926-483e-ac46-3bd55a1d6530",
-                "scriptName": "【Dreammini】4.[推进(移除舊)]",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/<plot>([\\s\\S]*?)</plot>/gsi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": 4,
-                "maxDepth": null,
-                "markdownOnly": true,
-                "promptOnly": true
-            },
-            {
-                "id": "77052179-920e-4b83-87f5-3dc4cef4a0c6",
-                "scriptName": "【Dreammini】5.小总结(縮起)",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
-                "replaceString": "<details>\n<summary>摘要</summary>\n$1\n</details>\n ",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 20,
-                "markdownOnly": true,
-                "promptOnly": false
-            },
-            {
-                "id": "9a7762c0-3e63-4502-bae5-10cf073fd5b6",
-                "scriptName": "【Dreammini】5.小总结(移除)",
-                "disabled": true,
-                "runOnEdit": true,
-                "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 20,
-                "markdownOnly": true,
-                "promptOnly": false
-            },
-            {
-                "id": "18956466-025a-4e61-b88d-74e5d4088051",
-                "scriptName": "【Dreammini】6.小总结(移除正文)",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/[\\s\\S]*?(?<!<details>\\s*)<summary>([\\s\\S]*)<\\/summary>[\\s\\S]*/gsi",
-                "replaceString": "<summary>\n$1\n</summary>",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": 20,
-                "maxDepth": null,
-                "markdownOnly": false,
-                "promptOnly": true
-            },
-            {
-                "id": "dd994ad4-8957-4a56-9cc9-e4afa85acb2e",
-                "scriptName": "【Dreammini】7.移除最近小总结",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/(?<!<details>\\s*)<summary>(((?!<summary>)[\\s\\S])*?)<\\/summary>/gsi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 19,
-                "markdownOnly": false,
-                "promptOnly": true
-            },
-            {
-                "id": "b31d0aec-eabd-4680-be70-a373a308cf65",
-                "scriptName": "【Dreammini】8.点击选项(格式)",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/<选项>\\s*1\\.\\s*(.*)\\s*2\\.\\s*(.*)\\s*3\\.\\s*(.*)\\s*4\\.\\s*(.*)\\s*5\\.\\s*(.*)\\s*6\\.\\s*(.*)\\s*<\\/选项>/",
-                "replaceString": "```\n<!DOCTYPE html>\n<html lang=\"zh-CN\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>冬季主题选择卡片</title>\n    <style>\n        /* 重置样式 */\n        * {\n            margin: 0;\n            padding: 0;\n            box-sizing: border-box;\n        }\n        \n        /* 淡出动画 */\n        @keyframes fade-out-nova { \n            from { opacity: 1; transform: scale(1); } \n            to { opacity: 0; transform: scale(0.95); } \n        }\n        .nova-container.fading-out { \n            animation: fade-out-nova 0.3s ease-out forwards; \n        }\n\n        :root {\n            --sky-blue-bg: linear-gradient(135deg, rgba(240, 248, 255, 0.97), rgba(220, 235, 255, 0.97));\n            --sky-blue-border: rgba(135, 206, 250, 0.7);\n            --sky-blue-shadow: rgba(135, 206, 250, 0.25);\n            --sky-blue-text: #4682B4;\n            --sky-blue-hover: rgba(135, 206, 250, 0.4);\n        }\n        \n        @keyframes snowfall {\n            0% { transform: translateY(-100px) rotate(0deg); opacity: 0; }\n            50% { opacity: 1; }\n            100% { transform: translateY(300px) rotate(360deg); opacity: 0; }\n        }\n        \n        @keyframes glowing-border-blue { \n            0%, 100% { \n                border-color: rgba(135, 206, 250, 0.6); \n                box-shadow: 0 0 15px rgba(135, 206, 250, 0.4); \n            } \n            50% { \n                border-color: rgba(173, 216, 230, 1); \n                box-shadow: 0 0 25px rgba(173, 216, 230, 0.7); \n            } \n        }\n        \n        /* 卡片容器 */\n        .theme-winter-love {\n            display: flex;\n            justify-content: center;\n            width: 100%;\n            box-sizing: border-box;\n            font-family: 'Quicksand', sans-serif;\n            margin: 10px auto;\n        }\n        \n        /* 卡片主体 */\n        .card-winter-love {\n            width: 720px;\n            background: var(--sky-blue-bg);\n            border-radius: 20px;\n            padding: 25px;\n            box-shadow: 0 0 30px var(--sky-blue-shadow);\n            border: 2px solid var(--sky-blue-border);\n            backdrop-filter: blur(12px);\n            -webkit-backdrop-filter: blur(12px);\n            animation: glowing-border-blue 4s infinite ease-in-out;\n            position: relative;\n            overflow: hidden;\n        }\n        \n        /* 雪花效果 */\n        .snowflakes {\n            position: absolute;\n            top: 0; \n            left: 0;\n            width: 100%; \n            height: 100%;\n            pointer-events: none;\n            z-index: 1;\n        }\n        \n        .snowflake {\n            position: absolute; \n            color: var(--sky-blue-border); \n            font-size: 24px;\n            opacity: 0; \n            animation: snowfall 10s linear infinite;\n        }\n        \n        .snowflake:nth-child(1) { left: 5%; animation-duration: 14s; animation-delay: 0s; }\n        .snowflake:nth-child(2) { left: 15%; animation-duration: 10s; animation-delay: 3s; font-size: 18px; }\n        .snowflake:nth-child(3) { left: 25%; animation-duration: 16s; animation-delay: 1s; }\n        .snowflake:nth-child(4) { left: 40%; animation-duration: 11s; animation-delay: 5s; font-size: 20px; }\n        .snowflake:nth-child(5) { left: 55%; animation-duration: 13s; animation-delay: 2s; }\n        .snowflake:nth-child(6) { left: 70%; animation-duration: 15s; animation-delay: 7s; font-size: 22px; }\n        .snowflake:nth-child(7) { left: 85%; animation-duration: 16s; animation-delay: 4s; }\n        .snowflake:nth-child(8) { left: 30%; animation-duration: 18s; animation-delay: 6s; font-size: 16px; }\n        \n        /* 按钮组 */\n        .button-group-winter {\n            display: grid;\n            grid-template-columns: repeat(2, 1fr);\n            gap: 15px;\n            position: relative;\n            z-index: 10;\n        }\n        \n        /* 按钮样式 */\n        .action-btn-winter {\n            border-radius: 12px; \n            padding: 18px 20px; \n            font-size: 16px;\n            font-weight: 600; \n            cursor: pointer; \n            position: relative; \n            overflow: hidden;\n            transition: all 0.3s ease; \n            border: none;\n            background-color: rgba(135, 206, 250, 0.15);\n            color: var(--sky-blue-text);\n            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);\n            text-align: center;\n        }\n        \n        .action-btn-winter:hover {\n            background-color: var(--sky-blue-hover);\n            transform: translateY(-3px);\n            box-shadow: 0 6px 15px rgba(135, 206, 250, 0.4);\n        }\n        \n        .action-btn-winter::after {\n            content: '';\n            position: absolute;\n            top: 0;\n            left: -100%;\n            width: 100%;\n            height: 100%;\n            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);\n            transition: all 0.6s ease;\n        }\n        \n        .action-btn-winter:hover::after {\n            left: 100%;\n        }\n    </style>\n</head>\n<body>\n    <!-- 卡片容器 - 只有这个部分会被嵌入 -->\n    <div class=\"theme-winter-love nova-container\">\n        <div class=\"card-winter-love\">\n            <div class=\"snowflakes\" aria-hidden=\"true\">\n                <div class=\"snowflake\">❄</div> <div class=\"snowflake\">❅</div> <div class=\"snowflake\">❄</div>\n                <div class=\"snowflake\">❅</div> <div class=\"snowflake\">❄</div> <div class=\"snowflake\">❅</div>\n                <div class=\"snowflake\">❄</div> <div class=\"snowflake\">❅</div> \n            </div>\n            \n            <div class=\"button-group-winter\">\n                <!-- 关键改动：按钮不再有预设文本，而是通过data-full-text属性接收完整字符串 -->\n                <button class=\"action-btn-winter\" data-full-text=\"$1\"></button>\n                <button class=\"action-btn-winter\" data-full-text=\"$2\"></button>\n                <button class=\"action-btn-winter\" data-full-text=\"$3\"></button>\n                <button class=\"action-btn-winter\" data-full-text=\"$4\"></button>\n                <button class=\"action-btn-winter\" data-full-text=\"$5\"></button>\n                <button class=\"action-btn-winter\" data-full-text=\"$6\"></button>\n            </div>\n        </div>\n    </div>\n\n    <!-- 关键改动：脚本被重写以解析新格式 -->\n    <script>\n        document.querySelectorAll('.action-btn-winter').forEach(btn => {\n            const fullText = btn.getAttribute('data-full-text').trim();\n            \n            // 如果正则捕获的内容为空，则不显示该按钮\n            if (!fullText) {\n                btn.style.display = 'none';\n                return;\n            }\n\n            // 使用中文顿号'、'作为分隔符来切分显示文本和指令文本\n            const parts = fullText.split('、');\n            const optionText = parts[0].trim();\n            // 如果切分后数组长度大于1，说明存在指令文本；否则，指令文本与显示文本相同\n            const resultText = parts.length > 1 ? parts.slice(1).join('、').trim() : optionText;\n\n            // 将解析出的显示文本设置给按钮\n            btn.textContent = optionText;\n\n            // 添加点击事件监听器\n            btn.addEventListener('click', (event) => {\n                // 防止重复点击\n                if (btn.disabled) return;\n                btn.disabled = true;\n\n                // 将解析出的指令文本作为要发送的消息\n                const message = resultText;\n                \n                // 点击后的视觉反馈\n                btn.textContent = `已选择: ${optionText}`;\n                btn.style.backgroundColor = 'rgba(102, 204, 102, 0.3)';\n                btn.style.transform = 'translateY(0)';\n\n                // 获取最外层的容器，用于整体淡出\n                const container = btn.closest('.nova-container');\n\n                setTimeout(() => {\n                    // 调用外部函数发送指令\n                    if (typeof triggerSlash === 'function') {\n                        triggerSlash(`/send ${message}|/trigger`);\n                    } else {\n                        // 如果在应用外测试，则打印到控制台\n                        console.log(`Action: /send ${message}|/trigger`);\n                    }\n                    \n                    // 触发淡出动画，并在动画结束后隐藏整个卡片\n                    if (container) {\n                        container.classList.add('fading-out');\n                        container.addEventListener('animationend', () => {\n                            container.style.display = 'none';\n                        });\n                    }\n                }, 800);\n            });\n        });\n    </script>\n</body>\n</html>\n```",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 2,
-                "markdownOnly": true,
-                "promptOnly": false
-            },
-            {
-                "id": "4c4f6a63-0ee7-404a-b31e-1e61232f0c7b",
-                "scriptName": "【Dreammini】8.选项(格式)",
-                "disabled": true,
-                "runOnEdit": true,
-                "findRegex": "/<options>\\s*(1\\.[^\\n]*)\\s*(2\\.[^\\n]*)\\s*(3\\.[^\\n]*)\\s*(4\\.[^\\n]*)\\s*(5\\.[^\\n]*)\\s*(6\\.[^\\n]*)\\s*(7\\.[^\\n]*)\\s*(8\\.[^\\n]*)\\s*(9\\.[^\\n]*)\\s*<\\/options>/gsi",
-                "replaceString": "\n<options><details><summary style=\"background-color: #000000; color: #ffffff; padding: 5px; font-weight: bold; border-radius: 5px;\">故事选项</summary><div style=\"background-color: #000000; color: #ffffff; padding: 15px; border-radius: 0 0 5px 5px;\"><p style=\"margin: 5px 0;\">以下为当前场景下的可选行动，选择数字1-9（可複选），或使用10自行输入：</p><ul style=\"list-style-type: none; padding-left: 0;\"><li>\"$1\" <br> </li><li>\"$2\"<br> </li><li>\"$3\"<br></li><li>\"$4\"<br></li><li>\"$5\"<br></li><li>\"$6\"<br> </li><li>\"$7\"<br></li><li>\"$8\"<br></li><li>\"$9\" </li></ul></div></details></options>\n",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 20,
-                "markdownOnly": true,
-                "promptOnly": false
-            },
-            {
-                "id": "eb3db98a-6a27-4f32-8e80-4a3014d9913a",
-                "scriptName": "【Dreammini】9.点击选项(消除)",
-                "disabled": false,
-                "runOnEdit": true,
-                "findRegex": "/<选项>\\s*1\\.\\s*(.*)\\s*2\\.\\s*(.*)\\s*3\\.\\s*(.*)\\s*4\\.\\s*(.*)\\s*5\\.\\s*(.*)\\s*6\\.\\s*(.*)\\s*<\\/选项>/",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null,
-                "markdownOnly": true,
-                "promptOnly": true
-            },
-            {
-                "id": "c28179a9-f094-4df5-a8a9-29c6f46fdd8a",
-                "scriptName": "【Dreammini】9.选项(移除)",
-                "disabled": true,
-                "runOnEdit": true,
-                "findRegex": "/<options[^>]*>[\\s\\S]*?</options>/gsi",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "substituteRegex": 0,
-                "minDepth": 3,
-                "maxDepth": null,
-                "markdownOnly": false,
                 "promptOnly": true
             }
         ],

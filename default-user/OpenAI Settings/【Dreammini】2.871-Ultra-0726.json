@@ -20,7 +20,7 @@
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
     "custom_model": "gemini-2.5-pro",
-    "custom_url": "http://45.32.91.44:6000/v1",
+    "custom_url": "http://45.32.91.44:3000/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
@@ -3232,7 +3232,7 @@
                 },
                 {
                     "identifier": "49db8663-5347-4aa7-889b-d337240ed04a",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "e5d85924-82e1-4f26-bf1c-8f7dce07a687",
@@ -3288,7 +3288,7 @@
                 },
                 {
                     "identifier": "c69e6c4b-d77c-4d85-9dee-8fca04852d5d",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "bb08793a-4876-41e0-a45b-12eb8f95d8a9",
@@ -3448,7 +3448,7 @@
                 },
                 {
                     "identifier": "1d559cbc-f8d2-4204-a55e-f2f7fac41122",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "3a0db162-fa32-4adf-93bd-47f753011129",
@@ -3520,7 +3520,7 @@
                 },
                 {
                     "identifier": "0a8db465-0891-4e30-b254-8a12d765954d",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "675ccf79-08f9-4310-a7aa-f160dea3fc33",
@@ -3528,7 +3528,7 @@
                 },
                 {
                     "identifier": "088ce8ee-7652-48cd-aa28-7bad3843baf5",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "cb490b29-05a2-40b3-b7a6-f7399dc01120",

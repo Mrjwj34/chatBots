@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "NavOpened": "false",
-        "LNavOpened": "false",
+        "LNavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
         "AlertWI_异世界，心跳大冒险.png": "true",
@@ -2312,7 +2312,7 @@
                 "name": "⭕⚙️📋字数调整-可改",
                 "system_prompt": true,
                 "role": "system",
-                "content": "{{setvar::min::1200token}}\n{{//注解:正文最小字数}}\n{{setvar::max::1500token}}\n{{//注解:正文最大字数}}\n{{setvar::smallcotl::300}}\n{{//注解:专家思考使用token长度}}\n{{setvar::min2::300token}}\n{{//注解:截断小故事最小字数}}\n{{setvar::max2::500token}}\n{{//注解:截断小故事最大字数}}",
+                "content": "{{setvar::min::800token}}\n{{//注解:正文最小字数}}\n{{setvar::max::1200token}}\n{{//注解:正文最大字数}}\n{{setvar::smallcotl::300}}\n{{//注解:专家思考使用token长度}}\n{{setvar::min2::300token}}\n{{//注解:截断小故事最小字数}}\n{{setvar::max2::500token}}\n{{//注解:截断小故事最大字数}}",
                 "identifier": "jailbreak",
                 "injection_position": 0,
                 "injection_depth": 4,

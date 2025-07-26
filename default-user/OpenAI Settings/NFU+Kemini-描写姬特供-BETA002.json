@@ -1,4 +1,32 @@
 {
+    "chat_completion_source": "custom",
+    "openai_model": "gemini-1.5-pro-exp-0801",
+    "claude_model": "claude-2.1",
+    "windowai_model": "",
+    "openrouter_model": "OR_Website",
+    "openrouter_use_fallback": false,
+    "openrouter_group_models": false,
+    "openrouter_sort_models": "alphabetically",
+    "openrouter_providers": [],
+    "openrouter_allow_fallbacks": true,
+    "openrouter_middleout": "on",
+    "ai21_model": "jamba-1.6-large",
+    "mistralai_model": "mistral-medium-latest",
+    "cohere_model": "command-r",
+    "perplexity_model": "llama-3-70b-instruct",
+    "groq_model": "llama3-70b-8192",
+    "zerooneai_model": "",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "custom_model": "gemini-2.5-pro",
+    "custom_url": "http://45.32.91.44:6000/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
+    "custom_prompt_post_processing": "semi",
+    "google_model": "toothless-ab-test",
+    "vertexai_model": "gemini-2.0-flash-001",
     "temperature": 1.13,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -18,6 +46,8 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
     "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -719,7 +749,7 @@
                 },
                 {
                     "identifier": "b01e2219-c1b5-4bad-9ef9-c594cb75267a",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "254d37a5-250f-4ee1-9c19-42e62f9c18fe",
@@ -743,11 +773,11 @@
                 },
                 {
                     "identifier": "40b5531c-e2ac-4555-ab70-8afc37a3947b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "ad616868-2fee-43b9-b956-9087f8eecb9e",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "ec22ec1f-6b4b-4639-90f0-336a26934132",
@@ -848,14 +878,21 @@
             ]
         }
     ],
+    "api_url_scale": "",
+    "show_external_models": true,
     "assistant_prefill": "",
     "assistant_impersonation": "",
     "claude_use_sysprompt": false,
     "use_makersuite_sysprompt": true,
+    "vertexai_auth_mode": "express",
+    "vertexai_region": "us-central1",
+    "vertexai_express_project_id": "",
+    "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
     "inline_image_quality": "low",
     "video_inlining": false,
+    "bypass_status_check": false,
     "continue_prefill": false,
     "continue_postfix": " ",
     "function_calling": false,

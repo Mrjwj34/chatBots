@@ -1,6 +1,6 @@
 {
     "name": "Blank",
-    "prefix": "",
-    "suffix": "",
+    "prefix": "<guide>",
+    "suffix": "</guide>",
     "separator": ""
 }

@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "NavOpened": "false",
+        "NavOpened": "true",
         "LNavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}}}}",
@@ -209,7 +209,7 @@
             "target_length": 400
         },
         "markdown_escape_strings": "",
-        "chat_truncation": 100,
+        "chat_truncation": 15,
         "streaming_fps": 30,
         "smooth_streaming": false,
         "smooth_streaming_speed": 50,
@@ -2096,7 +2096,7 @@
             "render": {
                 "render_enabled": true,
                 "tampermonkey_compatibility": false,
-                "render_depth": 0,
+                "render_depth": 3,
                 "render_optimize": false
             },
             "script": {
@@ -2154,6 +2154,24 @@
                 "url": "http://localhost:6621",
                 "duration": 1000
             }
+        },
+        "EjsTemplate": {
+            "enabled": true,
+            "generate_enabled": true,
+            "generate_loader_enabled": true,
+            "render_enabled": true,
+            "render_loader_enabled": true,
+            "with_context_disabled": false,
+            "debug_enabled": false,
+            "autosave_enabled": false,
+            "preload_worldinfo_enabled": true,
+            "code_blocks_enabled": true,
+            "raw_message_evaluation_enabled": true,
+            "filter_message_enabled": true,
+            "cache_enabled": 0,
+            "cache_size": 64,
+            "cache_hasher": "h32ToString",
+            "inject_loader_enabled": true
         }
     },
     "tags": [
